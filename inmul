@@ -1,0 +1,35 @@
+
+
+#include <stdio.h>
+ 
+int[][] inmul(int first[50][50], int second[50][50])
+{
+  int m, n, p, q, c, d, k, sum = 0;
+ 
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+      {
+        for ( k = 0 ; k < p ; k++ )
+        {
+          sum = sum + first[c][k]*second[k][d];
+        }
+ 
+        multiply[c][d] = sum;
+        sum = 0;
+      }
+    }
+ 
+    printf("Product of entered matrices:-\n");
+ 
+    for ( c = 0 ; c < m ; c++ )
+    {
+      for ( d = 0 ; d < q ; d++ )
+        printf("%d\t", multiply[c][d]);
+ 
+      printf("\n");
+    }
+  }
+ 
+  return 0;
+}
