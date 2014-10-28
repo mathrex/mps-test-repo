@@ -1,5 +1,7 @@
+
 #include<stdio.h>
 
+<<<<<<< HEAD
 void inmul(int first[10][10], int second[10][10], int multiply[10][10])
 {
   int m, n, p, q, c, d, k, sum = 0;
@@ -19,3 +21,17 @@ void inmul(int first[10][10], int second[10][10], int multiply[10][10])
       }
     }
 }
+=======
+
+
+
+void add(int a[30][30],int b[30][30],int c[30][30],int n) {
+
+
+	int i,j;
+	for (i = 0; i < n; i++)
+		for(j = 0; j < n; j++)
+			c[i][j] = a[i][j] + b[i][j];
+}
+
+>>>>>>> e500b260d4e583b047e5eaaa1cf1aa7f8de69308
