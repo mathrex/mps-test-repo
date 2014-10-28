@@ -29,3 +29,13 @@ void add(int a[30][30],int b[30][30],int c[30][30],int n) {
 			c[i][j] = a[i][j] + b[i][j];
 }
 
+void print(int a[10][10])
+{
+  int i = 0, j = 0;
+  for(i = 0; i < 10; i++) {
+    for(j = 0; j < 10; j++) {
+      printf("%d ", a[i][j]);
+    }
+    printf("/n");
+  }
+}
